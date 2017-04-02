@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8efe7;
+    display: flex;
+    flex-flow: column wrap
+}
+
+header {
+    color: white;
+    height: 450px;
+    background-image: url("../img/background2.gif");
+    background-size: 100% 450px;
+    background-position: center center;
+    display: flex;
+    flex-direction: column /*background-attachment: fixed; Ð¥ÐžÐ§Ð£ FIXED ;-( */
+}
+
+#nav_logo {
+    
+    height: 10%;
+    display: flex;
+}
+
+#button {
+    display: flex;
+    height: 10%;
+    justify-content: flex-end;
+    padding-right: 8%;
+    padding-top: 3%;
+}
+
+#log_design {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    padding-left: 1.3%
+}
+
+#in_header {
+    justify-content: center;
+    text-align: center;
+    padding-top: 10%;
+}
+
+header h3 {
+    font-size: 14px
+}
+
+header input {
+    height: 30px;
+    width: 200px
+}
+
+nav {
+    order: 1;
+    padding-top: 10px;
+    overflow: hidden;
+    
+}
+nav li {
+    float: left;
+    list-style: none;
+}
+ul {
+    display: flex;
+    padding:0;
+    flex-wrap: nowrap;
+    }
+nav li a {
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 10px;
+    color: white;
+}
+
+main {
+    text-align: center;
+}
+
+#about {
+    padding-bottom: 60px;
+}
+
+#about p {
+    column-count: 3;
+    padding: 20px;
+}
+
+#gallery {
+    height: 360px;
+}
+
+#gallery_info {
+    height: 800px;
+    background-image: url("../img/background_info.gif");
+    background-size: 100% 800px;
+}
+
+#gallery img {
+    width: 30%;
+    padding-top: 25px;
+}
+
+#info {
+    height: 450px;
+    color: white;
+}
+
+#info_images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+#info img {
+    height: 50%;
+    width: 30%;
+}
+
+#info figure {
+    height: 40%;
+    width: 30%;
+}
+
+#partners {
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+#partners img {
+    height: 50%;
+    width: 30%;
+}
+
+
+
+#contacts img {
+    width: 60px;
+    height: 60px;
+}
+
+
+iframe{
+    padding-bottom: 10px;
+    padding-top: 10px;
+	width: 100%;
+	height: 550px;
+	border: 0;
+	
+}
+#contacts {
+        display: flex;
+    flex-flow: column wrap
+    }
+@media screen and (max-width: 720px) {
+    header {
+        height: 200px;
+    }
+
+    #in_header {
+        font-size: 0.7rem;
+        order: 2;
+    }
+
+    #button {
+        order: 1;
+    }
+
+    #nav_logo {
+        order: 0;
+    }
+
+    #gallery_info {
+        height: 800px;
+        background-image: none;
+        background-size: 100% 800px;
+    }
+
+    #info {
+        color: black;
+    }
+
+    nav {
+        width: 50px;
+        height: 50px;
+        background-image: url("../img/menu.png");
+        background-size: 100% 100%;
+        display: flex;
+    }
+    ul {
+        display: flex;
+        list-style-type: none
+    }
+        nav ul:hover {
+            background-image: none;
+        }
+    #about p {
+            column-count: 1;
+            padding: 10px;
+    }
+}
