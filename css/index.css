@@ -17,7 +17,18 @@ header {
     display: flex;
     flex-direction: column/*background-attachment: fixed; Ð¥ÐžÐ§Ð£ FIXED ;-( */
 }
-
+.button {
+  color: #49280b;
+  font-weight: 700;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+ height: 30px;
+    width: 200px;
+    
+    }
+.button:hover { background: rgba(255,255,255,.2); }
+.button:active { background: white; }
 #nav_logo {
     height: 10%;
     display: flex;
@@ -29,7 +40,6 @@ header {
     justify-content: flex-end;
     padding-right: 8%;
     padding-top: 3%;
-    
 }
 
 #log_design {
@@ -48,12 +58,6 @@ header {
 header h3 {
     font-size: 14px
 }
-
-header input {
-    height: 30px;
-    width: 200px
-}
-
 nav {
     width: 70%;
     order: 1;
@@ -191,17 +195,17 @@ iframe {
     }
     #in_header {
         font-size: 0.7em;
-        
     }
     #nav_logo {
-    height: auto}
+        height: auto
+    }
     #in_header {
         margin-top: 0px
     }
     #button {
         padding-top: 2px;
         padding-right: 0;
-        justify-content:center;
+        justify-content: center;
     }
     #gallery_info {
         height: auto;
@@ -239,8 +243,9 @@ iframe {
         height: 50%;
         padding-bottom: 10%;
         justify-content: center;
-        align-items: flex-end;
-    }
+        align-items: flex-end;}
+         
+
     #about {
         padding-top: 20px;
     }
