@@ -1,11 +1,12 @@
-* {
+html {
     margin: 0;
+    text-align: center
 }
 
 body {
     padding-top: 15px;
     max-width: 1200px;
-    margin: 0;
+    margin: 0 auto;
     background-color: #f8efe7;
     display: flex;
     flex-direction: column;
