@@ -11,23 +11,20 @@ $(function() {
 
 function sendForm(e) {
   var form = document.querySelector('form');
-  if (!form.checkValidity()) {
-    $('form').find(':submit').click(); 
-  }
-  else {
-    e.preventDefault();
-    $.ajax({
-        url: "https://formspree.io/alionka_g@mail.ru",
-        method: "POST",
-        data: {
-          name: $('#client_name').val(),
-                tel: $('#client_phone').val(),
-          
-        },
-        dataType: "json"
-      })
-      .done(function() {
-        $('form').html("Дякуємо!<br>Ми з Вами зв'яжемось у найкоротший термін");
-      });
-  }
+  if (form.checkValidity()) {
+        e.preventDefault();
+        $.ajax({
+                url: "https://formspree.io/alionka_g@mail.ru",
+                method: "POST",
+                data: {
+                    name: $('#client_name').val(),
+                    tel: $('#client_phone').val(),
+
+                },
+                dataType: "json"
+            })
+            .done(function() {
+                $('form').html("Дякуємо!<br>Ми з Вами зв'яжемось у найкоротший термін");
+            });
+    }
 }
