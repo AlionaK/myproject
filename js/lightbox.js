@@ -84,8 +84,9 @@
   Lightbox.prototype.enable = function() {
     $('.example-image').click(function() {
     
-$('#gallery').append('<a class="hide" class="example-image-link" href="img/kitchen1.jpg" data-lightbox="example-set"><img class="example-image"  class="hide" src="img/kitchen1.jpg" alt="" style="display:none"/></a>')
-
+$('#gallery').append('<a class="hide" class="example-image-link" href="img/guestroom.jpg" data-lightbox="example-set"><img class="example-image"  class="hide" src="img/guestroom.jpg" alt="Фото гостьової кімнати" style="display:none"/></a>')
+$('#gallery').append('<a class="hide" class="example-image-link" href="img/guestroom2.jpg" data-lightbox="example-set"><img class="example-image"  class="hide" src="img/guestroom2.jpg" alt="Фото гостьової кімнати модерн" style="display:none"/></a>')
+$('#gallery').append('<a class="hide" class="example-image-link" href="img/guestroom3.jpg" data-lightbox="example-set"><img class="example-image"  class="hide" src="img/guestroom3.jpg" alt="Фото гостьової кімнати класика" style="display:none"/></a>')
 });
 
     var self = this;
