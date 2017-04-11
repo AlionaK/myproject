@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
+    <link href="css/lightbox.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -16,22 +17,22 @@
             <nav>
                 <ul>
                     <li class="current">
-                        <a href="#home" class="smooth">ГОЛОВНА</a>
+                        <a href="#home">ГОЛОВНА</a>
                     </li>
                     <li>
-                        <a href="#about" class="smooth">ПРО НАС</a>
+                        <a href="#about">ПРО НАС</a>
                     </li>
                     <li>
-                        <a href="#gallery" class="smooth">ГАЛЕРЕЯ</a>
+                        <a href="#gallery">ГАЛЕРЕЯ</a>
                     </li>
                     <li>
-                        <a href="#info" class="smooth">ІНФОРМАЦІЯ</a>
+                        <a href="#info">ІНФОРМАЦІЯ</a>
                     </li>
                     <li>
-                        <a href="#partners" class="smooth">ПАРТНЕРИ</a>
+                        <a href="#partners">ПАРТНЕРИ</a>
                     </li>
                     <li>
-                        <a href="#contacts" class="smooth">КОНТАКТИ</a>
+                        <a href="#contacts">КОНТАКТИ</a>
                     </li>
                 </ul>
             </nav>
@@ -65,9 +66,10 @@
         <h2>НАШІ ПРОЕКТИ</h2>
         <div id="gallery_info">
             <section id="gallery">
-                <img src="img/kitchen1.jpg" alt="Фото білої кухні">
-                <img src="img/kitchen2.jpg" alt="ото червоної кухні">
-                <img src="img/kitchen3.jpg" alt="Фото сучасної кухні">
+               <a class="example-image-link" href="img/kitchen1.jpg" data-lightbox="example-set"><img class="example-image" src="img/kitchen1.jpg" alt=""/></a>
+                <a class="example-image-link" href="img/kitchen2.jpg" data-lightbox="example-set"><img class="example-image" src="img/kitchen2.jpg" alt=""/></a>
+                <a class="example-image-link" href="img/kitchen3.jpg" data-lightbox="example-set"><img class="example-image" src="img/kitchen3.jpg" alt=""/></a>
+
             </section>
             <section id="info">
                 <div id="info_head">
@@ -146,8 +148,7 @@
         <small>&copy;Tria Nova Ukraine. All rights reserved.</small>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="js/index.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
